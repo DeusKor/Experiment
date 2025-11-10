@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    // Output structure
+    "rootDir": ".",
+    "outDir": "dist",
+
+    // Modern ECMAScript
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+
+    // Node compatibility
+    "lib": ["esnext"],
+    "types": ["node", "vitest/globals"],
+
+    // Interop & ESM support
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Helpful extras
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Recommended project hygiene
+    "skipLibCheck": true,
+    "isolatedModules": true,
+  },
+  "include": ["src", "tests"],
+  "exclude": ["node_modules"]
+}
